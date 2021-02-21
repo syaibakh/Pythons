@@ -1,10 +1,9 @@
 # This is a guess the number game.
 import random
 
-print ('Hello. What is your name?')
-name = input ()
+name = input ('Hello. What is your name?: ')
 
-print ('Well, ' + name + ', I am thinking of a number between 1 and 20')
+print ('Well, ', name, ', I am thinking of a number between 1 and 20')
 secretNumber = random.randint (1, 20)
 
 for guessesTaken in range (1, 7):
@@ -19,8 +18,6 @@ for guessesTaken in range (1, 7):
         break
 
 if guess == secretNumber:
-    print ('Good job, ' + name + '! You guessed my number in ' + str(guessesTaken) + ' guesses!')
+    print ('Good job, ', name, '! You guessed my number in ', guessesTaken, ' guesses!')
 else:
-    print ('The number i was thinking of was ' + str(secretNumber))     
-
-
+    print ('The number i was thinking of was ', secretNumber)
