@@ -10,5 +10,3 @@ elif 1000 <= nilai < 9999:
     print('Ribuan')
 else:
     print('Banyakkk!')
-
-
