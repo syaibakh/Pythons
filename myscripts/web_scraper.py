@@ -1,4 +1,4 @@
 from selenium import webdriver
-browser = webdriver.Chrome()
 
+browser = webdriver.Chrome()
 browser.get('https://python.org')
